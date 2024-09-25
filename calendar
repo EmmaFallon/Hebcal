@@ -1,0 +1,6 @@
+<div id="hebcal-shabbat"></div>
+<script>
+fetch('https://www.hebcal.com/shabbat?cfg=i2&geonameid=2964574&ue=off&b=18&M=on&lg=a&tgt=_top')
+  .then(response => response.text())
+  .then(data => document.getElementById('hebcal-shabbat').innerHTML = data);
+</script>
